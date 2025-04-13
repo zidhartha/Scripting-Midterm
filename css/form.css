@@ -1,0 +1,101 @@
+.form{
+    width : 1000px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    margin-bottom:80px;
+}
+
+.multipleinputs {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.FormLabel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 83%);
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+select{
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 83%);
+    width: 50%;
+    margin-bottom: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.column input{
+    width: 20px;
+    height: 20px;
+}
+.column label{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.row {
+    display: flex;
+    gap: 100px;  
+    margin: 15px 0;  
+}
+select {
+    background-color: white;
+    width: 230px;
+}
+
+.button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.errors {
+    display: block;
+    color: #CC777B;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.error-input {
+    
+    border: 1.5px solid rgba(234, 204, 201, 1) ;
+    box-shadow: 2px 2px 5.1px 0px rgba(235, 205, 202, 1);
+
+}
+
+input {
+    margin-bottom: 0;  
+}
+
+.game-stuff{
+    display: none;
+}
