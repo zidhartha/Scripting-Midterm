@@ -41,7 +41,7 @@ if(lname.value.trim() === ''){
 }
 if(password.value.length < 8 || password.value.trim() == ''){
   showError(password,"Password must be at least 8 characters long")
-  
+  valid = false;
 }
 
 if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){

@@ -89,3 +89,10 @@ button p {
     width: 100%;
     font-weight: 700;
 }
+
+#player1-score-value, 
+#player2-score-value {
+    color: red;
+    font-weight: bold;
+}
+

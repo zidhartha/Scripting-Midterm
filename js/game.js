@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function (){
 
     const reset = document.getElementById("reset");
     const roll = document.getElementById('roll');
-    const player1ResultDisplay = document.querySelectorAll(".scores h1")[0];
-    const player2ResultDisplay = document.querySelectorAll(".scores h1")[1];
+    const player1ResultDisplay = document.getElementById("player1-score-value");
+    const player2ResultDisplay = document.getElementById("player2-score-value");
     const resultMessage = document.getElementById("result");
     const historyList = document.getElementById("history-list");
     const diceImages = document.querySelectorAll(".dice img");
@@ -31,8 +31,9 @@ document.addEventListener("DOMContentLoaded", function (){
             result =  "It's a Draw!🤝";
         }
 
-        player1ResultDisplay.textContent= "player 1 Score :" + player1Score;
-        player2ResultDisplay.textContent = "player 2 Score :" + player2Score;
+        player1ResultDisplay.textContent = player1Score;
+        player2ResultDisplay.textContent = player2Score;
+
         resultMessage.textContent = result;
         resultMessage.style.display = "block";
 
@@ -57,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function (){
         player1Score = 0;
         player2Score = 0;
         history = [];
-        player1ResultDisplay.textContent = "player 1 Score : 0";
-        player2ResultDisplay.textc = "player 2 Score : 0";
+        player1ResultDisplay.textContent = "0";
+        player2ResultDisplay.textc = "0";
         resultMessage.textContent = ''
         diceImages[0].src = "Dice/6.png";
         diceImages[1].src = "Dice/6.png";
