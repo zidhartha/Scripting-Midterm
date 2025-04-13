@@ -33,10 +33,11 @@ document.addEventListener("DOMContentLoaded", function (){
 
         player1ResultDisplay.textContent = player1Score;
         player2ResultDisplay.textContent = player2Score;
-
         resultMessage.textContent = result;
-        resultMessage.style.display = "block";
-
+        //the result text becomes visible with this
+        resultMessage.classList.add("visible");
+        
+        //generate the text for history
         let historyNow = "Round " + (history.length + 1) + ": Player 1 rolled " + roll1 + ", Player 2 rolled " + roll2 + " → " + result;
 
         history.push(historyNow);
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function (){
         historyList.innerHTML = ''
         for (const item of history) {
             const li = document.createElement("li");
-            li.textContent = item; // item is now the actual message
+            li.textContent = item; 
             historyList.append(li);
           }
     }
@@ -59,8 +60,10 @@ document.addEventListener("DOMContentLoaded", function (){
         player2Score = 0;
         history = [];
         player1ResultDisplay.textContent = "0";
-        player2ResultDisplay.textc = "0";
-        resultMessage.textContent = ''
+        player2ResultDisplay.text = "0";
+        resultMessage.textContent = "";
+        //becomes invisible again if resetted
+        resultMessage.classList.remove("visible");
         diceImages[0].src = "Dice/6.png";
         diceImages[1].src = "Dice/6.png";
         UpdateHistory();

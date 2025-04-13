@@ -44,7 +44,6 @@ button p {
   
 .dice{
     size: 10%;
-    margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -63,10 +62,7 @@ button p {
     font-size: 25px;
    
 }
-.result{
-    color: #AF2D2D;
-    
-}
+
 .game-history {
     margin-top: 30px;
     display: flex;
@@ -94,5 +90,17 @@ button p {
 #player2-score-value {
     color: red;
     font-weight: bold;
+}
+
+
+.result {
+    color: #AF2D2D;
+    min-height: 3.0rem; 
+    
+    visibility: hidden; 
+    font-weight: bold;
+}
+.result.visible {
+    visibility: visible;
 }
 
